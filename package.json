@@ -80,7 +80,7 @@
         },
         "prettier.tabWidth": {
           "type": "integer",
-          "default": 2,
+          "default": 4,
           "description": "Number of spaces it should use per tab",
           "scope": "resource"
         },
