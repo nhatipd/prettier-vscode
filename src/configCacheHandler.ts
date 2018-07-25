@@ -1,7 +1,7 @@
 import { workspace } from 'vscode';
 import { Prettier } from './types';
 
-const prettier = require('prettier') as Prettier;
+const prettier = require('prettier-ipd') as Prettier;
 /**
  * Prettier reads configuration from files
  */

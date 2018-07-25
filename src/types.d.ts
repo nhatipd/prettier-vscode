@@ -55,12 +55,12 @@ export interface PrettierConfig {
  */
 interface ExtensionConfig {
     /**
-     * Use 'prettier-eslint' instead of 'prettier'.
+     * Use 'prettier-eslint' instead of 'prettier-ipd'.
      * Other settings will only be fallbacks in case they could not be inferred from eslint rules.
      */
     eslintIntegration: boolean;
     /**
-     * Use 'prettier-stylelint' instead of 'prettier'.
+     * Use 'prettier-stylelint' instead of 'prettier-ipd'.
      * Other settings will only be fallbacks in case they could not be inferred from eslint rules.
      */
     stylelintIntegration: boolean;

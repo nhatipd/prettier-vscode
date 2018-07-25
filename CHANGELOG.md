@@ -130,7 +130,7 @@ All notable changes to the "prettier-vscode" extension will be documented in thi
 
 ## [0.11.0]
 
--   Resolve 'prettier' against formatted file. Nearest upward _node_modules/prettier_
+-   Resolve 'prettier-ipd' against formatted file. Nearest upward _node_modules/prettier_
 
 ## [0.10.0]
 

@@ -3,7 +3,7 @@ import * as path from 'path';
 import * as vscode from 'vscode';
 import { Prettier } from '../src/types';
 import { Uri } from 'vscode';
-const prettier = require('prettier') as Prettier;
+const prettier = require('prettier-ipd') as Prettier;
 
 /**
  * loads and format a file.

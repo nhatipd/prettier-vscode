@@ -3,7 +3,7 @@ import { format } from './format.test';
 import { workspace } from 'vscode';
 import { Prettier } from '../src/types';
 
-const prettier = require('prettier') as Prettier;
+const prettier = require('prettier-ipd') as Prettier;
 
 suite('Test disabled', function() {
     test('it formats with default formatter', () => {

@@ -93,7 +93,7 @@ async function format(
     customOptions: Partial<PrettierConfig>
 ): Promise<string> {
     const vscodeConfig: PrettierVSCodeConfig = getConfig(uri);
-    const localPrettier = requireLocalPkg(fileName, 'prettier') as Prettier;
+    const localPrettier = requireLocalPkg(fileName, 'prettier-ipd') as Prettier;
 
     // This has to stay, as it allows to skip in sub workspaceFolders. Sadly noop.
     // wf1  (with "lang") -> glob: "wf1/**"
@@ -206,7 +206,7 @@ async function format(
 
                 addToOutput(warningMessage);
 
-                setUsedModule('prettier', bundledPrettier.version, true);
+                setUsedModule('prettier-ipd', bundledPrettier.version, true);
 
                 return bundledPrettier.format(text, prettierOptions);
             },
@@ -215,7 +215,7 @@ async function format(
         );
     }
 
-    setUsedModule('prettier', localPrettier.version, false);
+    setUsedModule('prettier-ipd', localPrettier.version, false);
 
     return safeExecution(
         () => localPrettier.format(text, prettierOptions),
